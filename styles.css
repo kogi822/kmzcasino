@@ -1595,12 +1595,62 @@ body {
   display: none;
 }
 @media (max-width: 700px) {
-  .faq-section, .reviews-section {
-    padding: 1.2rem 0.5rem;
-    max-width: 98vw;
+  .casino-offers-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: visible !important;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+    width: 100vw;
+    margin: 0 auto;
   }
-  .faq-section h2, .reviews-section h2 {
+  .casino-offer {
+    min-width: 0 !important;
+    max-width: 98vw !important;
+    width: 98vw !important;
+    flex: 1 1 100%;
+    padding: 1rem 0.3rem;
+    gap: 0.5rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .casino-offer-logo, .casino-offer-screenshot {
+    margin-bottom: 0.5rem;
+  }
+  .casino-offer-btn, .casino-offer-copy-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1.1rem 0;
+    min-width: 0;
+    justify-content: center;
+  }
+  .casino-offer-logo-text {
     font-size: 1.3rem;
+    padding: 0.1em 0.05em;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-stats {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .stat-item {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+  }
+  .hero-badge {
+    margin-bottom: 1rem;
+  }
+  .hero-microcopy {
+    font-size: 0.98rem;
+    padding: 0.4rem 0.7rem;
+  }
+  .faq-section, .reviews-section {
+    padding: 1rem 0.2rem;
+    max-width: 99vw;
   }
 } 
 
