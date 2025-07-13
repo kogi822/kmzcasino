@@ -204,4 +204,21 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.casino-offer.fade-in-up.invisible').forEach(el => {
         el.classList.remove('invisible');
     });
+    
+    // Funkcja pokazywania kafelków kasyn po kliknięciu przycisków w hero
+    const heroButtons = document.querySelectorAll('.hero-cta a[href="#casino-offers"]');
+    heroButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            // Pokazujemy kafelki kasyn
+            document.querySelectorAll('.casino-offer.fade-in-up.invisible').forEach(el => {
+                el.classList.remove('invisible');
+            });
+            
+            // Dodajemy efekt kliknięcia
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 150);
+        });
+    });
 }); 
