@@ -1739,6 +1739,32 @@ body {
   display: none;
 }
 @media (max-width: 700px) {
+  .casino-offer-code-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-width: 0;
+  }
+  .casino-offer-code-value {
+    flex: 1 1 0%;
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 0.45rem 0.7rem;
+  }
+  .casino-offer-copy-btn {
+    flex-shrink: 0;
+    margin-left: 0.3rem;
+    font-size: 1rem;
+    padding: 0.45rem 1rem;
+  }
   /* Poprawki dla kafelków kasyn na mobile */
   .casino-offers-list {
     flex-direction: column;
