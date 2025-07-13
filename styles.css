@@ -1749,7 +1749,7 @@ body {
     min-width: 0;
   }
   .casino-offer-code-value {
-    flex: 1 1 0%;
+    flex: 1 1 0;
     min-width: 0;
     max-width: 100%;
     overflow-x: auto;
@@ -1760,10 +1760,13 @@ body {
     padding: 0.45rem 0.7rem;
   }
   .casino-offer-copy-btn {
-    flex-shrink: 0;
+    flex: 0 0 90px;
+    min-width: 90px;
+    max-width: 90px;
     margin-left: 0.3rem;
     font-size: 1rem;
-    padding: 0.45rem 1rem;
+    padding: 0.45rem 0;
+    text-align: center;
   }
   /* Poprawki dla kafelków kasyn na mobile */
   .casino-offers-list {
